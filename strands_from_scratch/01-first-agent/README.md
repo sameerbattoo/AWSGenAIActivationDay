@@ -49,12 +49,12 @@ and a Recipe Agent:
 ![Architecture](./images/interactive_recipe_agent.png)
 
 
-2. **02-simple-interactive-usecase/**: A directory containing a simple interactive cooking/Recipe agent to be run via the CLI.
+2. **simple-interactive-usecase/**: A directory containing a simple interactive cooking/Recipe agent to be run via the CLI.
 
 
 To run the interactive agent:
 
-1. Navigate to the directory: `cd 02-simple-interactive-usecase`
+1. Navigate to the directory: `cd simple-interactive-usecase`
 2. Install the requirements: `pip install -r requirements.txt`
 3. Run the script: `python recipe_bot.py`
 
