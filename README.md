@@ -1,5 +1,6 @@
 # AWSGenAIActivationDay
 Repo for Strands Agent &amp; deployment to AgentCore
+This repo contains various notebooks to be run locally using VS Code or an equivalent IDE.
 
 ### Prerequisites
 
@@ -7,6 +8,7 @@ Repo for Strands Agent &amp; deployment to AgentCore
 - [Python 3.10](https://www.python.org/downloads/) or later
 - [Docker](https://www.docker.com/) or [Finch](https://runfinch.com/) installed and running - only for local development
 - Model Access: Anthropic Claude 4.0 enabled in [Amazon Bedrock console](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html)
+- [VS Code](https://code.visualstudio.com/) or equivalent as a IDE to the run the notebooks locally on your laptop.
 - AWS Permissions:
     1) Create a **IAM Policy** named **"_GenAIActivationDay_policy"**
     ```json
@@ -286,8 +288,11 @@ Repo for Strands Agent &amp; deployment to AgentCore
         ]
     }
     ```
-    And, the following **Permissions policies**
+
+        And, the following **Permissions policies**
         
         - _GenAIActivationDay_policy
         - AWSCloudFormationReadOnlyAccess
         - AmazonSageMakerFullAccess
+
+    3) Add the newly created policy  **"GenAIActivationDay_policy"** to your IAM user configured locally (used by VS Code)
