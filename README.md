@@ -259,6 +259,56 @@ This repo contains various notebooks to be run locally using VS Code or an equiv
                 "Effect": "Allow",
                 "Action": "sns:*",
                 "Resource": "*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "bedrock-agentcore:CreateAgentRuntime",
+                    "bedrock-agentcore:UpdateAgentRuntime",
+                    "bedrock-agentcore:DeleteAgentRuntime",
+                    "bedrock-agentcore:DescribeAgentRuntime",
+                    "bedrock-agentcore:LaunchAgentRuntime",
+                    "bedrock-agentcore:InvokeAgentRuntime"
+                ],
+                "Resource": "*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "iam:CreateRole",
+                    "iam:AttachRolePolicy",
+                    "iam:PassRole"
+                ],
+                "Resource": "*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ecr:CreateRepository",
+                    "ecr:DescribeRepositories",
+                    "ecr:GetAuthorizationToken"
+                ],
+                "Resource": "*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "logs:CreateLogGroup",
+                    "logs:PutLogEvents",
+                    "logs:DescribeLogStreams",
+                    "logs:DescribeLogGroups"
+                ],
+                "Resource": "*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ec2:CreateNetworkInterface",
+                    "ec2:DeleteNetworkInterface",
+                    "ec2:DescribeSubnets",
+                    "ec2:DescribeSecurityGroups"
+                ],
+                "Resource": "*"
             }
         ]
     }
