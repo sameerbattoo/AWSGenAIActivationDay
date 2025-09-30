@@ -311,18 +311,16 @@ This repo contains various notebooks to be run locally using VS Code or an equiv
                 "Resource": "*"
             },
             {
-               "Effect": "Allow",
-               "Action": [
-                "xray:PutTraceSegments",
-                "xray:PutTelemetryRecords",
-                "logs:CreateLogGroup",
-                "logs:CreateLogStream",
-                "logs:PutLogEvents",
-                "application-signals:*"
-               ],
-               "Resource": "*"
-              }
-             ]
+                "Effect": "Allow",
+                "Action": [
+                    "xray:PutTraceSegments",
+                    "xray:PutTelemetryRecords",
+                    "logs:CreateLogGroup",
+                    "logs:CreateLogStream",
+                    "logs:PutLogEvents",
+                    "application-signals:*"
+                ],
+                "Resource": "*"
             }
         ]
     }
