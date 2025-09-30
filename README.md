@@ -309,6 +309,20 @@ This repo contains various notebooks to be run locally using VS Code or an equiv
                     "ec2:DescribeSecurityGroups"
                 ],
                 "Resource": "*"
+            },
+            {
+               "Effect": "Allow",
+               "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "application-signals:*"
+               ],
+               "Resource": "*"
+              }
+             ]
             }
         ]
     }
